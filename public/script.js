@@ -127,7 +127,7 @@ async function uploadAndPredict() {
     formData.append("file", fileInput.files[0]);
 
     try {
-        let response = await fetch("http://127.0.0.1:5000/predict", {
+        let response = await fetch("https://drinking-water-api.onrender.com", {
             method: "POST",
             body: formData
         });
